@@ -12,3 +12,14 @@
 // } else {
 //     alert('Not quite, but great try!');
 // }
+
+var canIRunFast = prompt('Can I run faster than a cheetah?  \(Please respond with either a YES or NO\)')
+console.log('Did the user think I could run fast?: ' + canIRunFast)
+
+if(canIRunFast === 'YES') {
+    alert('so....I was kind of lying, just a little.  There is no WAY I can run faster than a cheetah! However, you honor me with your answer and I will continue to train until I reach the speed of a cheetah!!');
+} else if (canIRunFast === 'NO') {
+    alert('You are correct...I can only run AS FAST as a cheetah, not faster.');
+} else {
+    alert('Please enter YES or NO');
+}
