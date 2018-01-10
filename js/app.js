@@ -26,7 +26,7 @@ if(canIRunFast === 'YES') {
 
 var likesToDance = prompt('I really like to dance.  How about you?');
 console.log('Does the user like to dance?: ' + likesToDance);
-alert('Challenge accepted.  Let\'s dance now then shall we!');
+alert('Challenge accepted!  Let\'s dance right now!!');
 
 var likesKaraoke = prompt('How about Karaoke?  Do you like Karaoke? \(Y or N)').toUpperCase();
 console.log('Does the user like Karaoke?: ' + likesKaraoke);
@@ -34,6 +34,7 @@ console.log('Does the user like Karaoke?: ' + likesKaraoke);
 if(likesKaraoke === 'Y') {
     
     var warmUp =prompt('Great, can we warm up together then? \(Y or N\)').toUpperCase();
+    console.log('Did we warm up?: ' + warmUp);
 
     if(warmUp === 'Y') {
         alert('Do-Re-Mi-Fa-So-La-Ti!');
