@@ -14,7 +14,7 @@ if(howManyStates === 23) {
 }
     
 var canIRunFast = prompt('Can I run faster than a cheetah?  \(Please respond with either a YES or NO\)')
-console.log('Did the user think I could run fast?: ' + canIRunFast)
+console.log('Did t   he user think I could run fast?: ' + canIRunFast)
 
 if(canIRunFast === 'YES') {
     alert('so....I was kind of lying, just a little.  There is no WAY I can run faster than a cheetah! However, you honor me with your answer and I will continue to train until I reach the speed of a cheetah!!');
@@ -24,16 +24,16 @@ if(canIRunFast === 'YES') {
     alert('Please enter YES or NO');
 }
 
-var likesToDance = prompt('I really like to dance.  How about you?');
-console.log('Does the user like to dance?: ' + likesToDance);
-alert('Challenge accepted!  Let\'s dance right now!!');
+var likesToDance = prompt('Take a guess, do I like to dance? \(Y/N)');
+console.log('Does the user think I like to dance?: ' + likesToDance);
+alert('Tricked you! It actually doesn\'t matter either way so let\'s dance right now!!');
 
-var likesKaraoke = prompt('How about Karaoke?  Do you like Karaoke? \(Y or N)').toUpperCase();
-console.log('Does the user like Karaoke?: ' + likesKaraoke);
+var likesKaraoke = prompt('How about Karaoke?  Do I like Karaoke? \(Y or N)').toUpperCase();
+console.log('Does the user think I like Karaoke?: ' + likesKaraoke);
 
 if(likesKaraoke === 'Y') {
     
-    var warmUp =prompt('Great, can we warm up together then? \(Y or N\)').toUpperCase();
+    var warmUp =prompt('You got that right! Can we warm up together then? \(Y/N\)').toUpperCase();
     console.log('Did we warm up?: ' + warmUp);
 
     if(warmUp === 'Y') {
@@ -42,6 +42,26 @@ if(likesKaraoke === 'Y') {
         alert('Some singer you are!');
     }
 } if(likesKaraoke === 'N') {
-    alert('Awww bummer, maybe next time =(');
+    alert('Actually, I LOVE karaoke!');
 }
+
+var catPerson = prompt('Am I a cat person?\(Y or N)').toUpperCase();
+console.log('Does the user think I am a cat person?: ' + catPerson);
+
+if(catPerson === 'Y') {
+    alert('You got that right!  They\'re so purrrdy!');
+} else {
+    alert('What\'s the meowtter with you?! Of course I love them kit-tays!');
+}
+
+var dogPerson = prompt('Am I a dog person?\(Y or N)').toUpperCase();
+console.log('Does the user think I am a dog person?: ' + dogPerson);
+
+if (dogPerson === 'Y') {
+    alert('Hey, a person can be both OKAY!');
+} else {
+    alert('Doggos barking by day keeps a smile on my fay!...(translation - I love them boofin woofers!)');
+}
+
+
 
