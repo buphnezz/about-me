@@ -1,19 +1,22 @@
 body {
-  padding-left: 11em;
   font-family: Georgia, "Times New Roman",
-        Times, serif;
+        cursive, serif;
   color: purple;
   background-color: #d8da3d;
 }
+
 h1 {
-  font-size: 500%;
+  font-size: 400%;
+  text-align: center;
 }
 
 h2 {
     color: black;
+    text-align: center;
 }
 
 h3 {
     color: green;
-    font-size: 800%;
+    font-size: 600%;
+    text-align: center;
 }
