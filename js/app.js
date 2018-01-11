@@ -95,57 +95,37 @@ function guessDogPerson() {
   }
 }
 
-// var numberInMyHead = 77;
-
-// for (var c = 3; c > 0; c--) {
-//   var numberGuessed = parseInt(prompt('What number am I thinking of? (Yes..I\'m being serious.  Take a guess but don\'t forget to input an actual number, no letters! =)'));
-
-//   // numberGuessed = parseInt(numberGuessed);
-
-//   if (numberGuessed < numberInMyHead) {
-
-//     if (c === 0) {
-//       alert('Aw, nice try. You are out of guesses.  Thanks for playing!');
-//       console.log(c);
-//     }
-
-//     if (c === 1) {
-//       alert('higher. ' + 'You have ' + c + ' guess remaining!');
-//       console.log(c);
-//     }
-
-//     else {
-//       alert('higher. ' + 'You have ' + c + ' guesses remaining!');
-//       console.log(c);
-//     }
-
-//   } else if (numberGuessed > numberInMyHead) {
-
-//     if (numberGuessed > numberInMyHead && c === 0) {
-//       alert('Aw, nice try. You are out of guesses.  Thanks for playing!');
-//       console.log(c);
-//       break;
-//     }
-
-//     alert('lower. ' + 'You have ' + c + ' guesses remaining!');
-//     console.log(c);
-//   }
-
-//   if (numberGuessed > numberInMyHead && c === 1) {
-//     alert('lower. ' + 'You have ' + c + ' guess remaining!');
-//     continue;
-
-//   } else if (numberGuessed > numberInMyHead && c === 0) {
-//     alert('Aw, nice try. You are out of guesses.  Thanks for playing!');
-//     console.log(c);
-//     break;
-
-//   } else {
-//     alert('correct the number was ' + numberInMyHead);
-//     console.log(c);
-//     break;
-//   }
-// }
+var numberInMyHead = 77, counter, numberGuessed;
+numberGuessed = parseInt(prompt('What number am I thinking of?'));
+for (counter = 3; counter >= 0; counter--) {
+  if (numberGuessed < numberInMyHead) {
+    console.log(counter);
+    if (counter === 0) {
+      alert('Nice try. You are out of guesses.');
+    } else if (counter === 1) {
+      alert('You have ' + counter + ' guess left.');
+      numberGuessed = parseInt(prompt('Guess again'));
+    } else {
+      alert('You have ' + counter + ' guesses remaining.');
+      numberGuessed = parseInt(prompt('Guess again'));
+    }
+  } else if (numberGuessed > numberInMyHead) {
+    console.log(counter);
+    if (counter === 0) {
+      alert('Nice try. You are out of guesses.');
+    } else if (counter === 1) {
+      alert('You have ' + counter + ' guess left.');
+      numberGuessed = parseInt(prompt('Guess again'));
+    } else {
+      alert('You have ' + counter + ' guesses remaining.');
+      numberGuessed = parseInt(prompt('Guess again'));
+    }
+  } else {
+    alert('Correct, the number was ' + numberInMyHead);
+    console.log(counter);
+    break;
+  }
+}
 
 inputUserName();
 guessHowManyStates();
