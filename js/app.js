@@ -19,29 +19,31 @@ var userName;
 //   }
 // }
 
-function guessCanIRunFast() {
-  var canIRunFast = prompt('Can I run faster than a cheetah?  (Please respond with either a YES or NO)').toUpperCase();
-  console.log('Did the user think I could run fast?: ' + canIRunFast);
+// function guessCanIRunFast() {
+//   var canIRunFast = prompt('Can I run faster than a cheetah?  (Please respond with either a YES or NO)').toUpperCase();
+//   console.log('Did the user think I could run fast?: ' + canIRunFast);
 
-  if(canIRunFast === 'YES') {
-    alert('so....I was kind of lying, just a little.  There is no WAY I can run faster than a cheetah! However, you honor me with your answer and I will continue to train until I reach the speed of a cheetah!!');
-  } else if (canIRunFast === 'NO') {
-    alert('You are correct...I can only run AS FAST as a cheetah, not faster.');
+//   if(canIRunFast === 'YES') {
+//     alert('so....I was kind of lying, just a little.  There is no WAY I can run faster than a cheetah! However, you honor me with your answer and I will continue to train until I reach the speed of a cheetah!!');
+//   } else if (canIRunFast === 'NO') {
+//     alert('You are correct...I can only run AS FAST as a cheetah, not faster.');
+//   } else {
+//     alert('Please enter YES or NO.');
+//   }
+// }
+
+function guessLikesToDance() {
+  var likesToDance = prompt('Take a guess, do I like to dance? (Y/N)').toUpperCase();
+  console.log('Does the user think I like to dance?: ' + likesToDance);
+  
+  if (likesToDance === 'Y') {
+    alert('Tricked you! It actually doesn\'t matter either way so let\'s dance right now!!');
+  } else if (likesToDance === 'N') {
+    alert('Tricked you! It actually doesn\'t matter either way so let\'s dance right now!!');
   } else {
-    alert('Please enter YES or NO.');
+    alert('Please enter Y or N.');
   }
 }
-
-// var likesToDance = prompt('Take a guess, do I like to dance? (Y/N)').toUpperCase();
-// console.log('Does the user think I like to dance?: ' + likesToDance);
-
-// if (likesToDance === 'Y') {
-//   alert('Tricked you! It actually doesn\'t matter either way so let\'s dance right now!!');
-// } else if (likesToDance === 'N') {
-//   alert('Tricked you! It actually doesn\'t matter either way so let\'s dance right now!!');
-// } else {
-//   alert('Please enter Y or N.');
-// }
 
 // var likesKaraoke = prompt('How about Karaoke?  Do I like Karaoke? (Y/N)').toUpperCase();
 // console.log('Does the user think I like Karaoke?: ' + likesKaraoke);
@@ -141,4 +143,5 @@ function guessCanIRunFast() {
 
 // inputUserName();
 // guessHowManyStates();
-guessCanIRunFast();
+// guessCanIRunFast();
+guessLikesToDance();
