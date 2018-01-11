@@ -45,51 +45,55 @@ var userName;
 //   }
 // }
 
-function guessLikesKaraoke() {
-  var likesKaraoke = prompt('How about Karaoke?  Do I like Karaoke? (Y/N)').toUpperCase();
-  console.log('Does the user think I like Karaoke?: ' + likesKaraoke);
+// function guessLikesKaraoke() {
+//   var likesKaraoke = prompt('How about Karaoke?  Do I like Karaoke? (Y/N)').toUpperCase();
+//   console.log('Does the user think I like Karaoke?: ' + likesKaraoke);
   
-  if (likesKaraoke === 'Y') {
+//   if (likesKaraoke === 'Y') {
   
-    var warmUp = prompt('You got that right! Can we warm up together then? (Y/N)').toUpperCase();
-    console.log('Did we warm up?: ' + warmUp);
+//     var warmUp = prompt('You got that right! Can we warm up together then? (Y/N)').toUpperCase();
+//     console.log('Did we warm up?: ' + warmUp);
   
-    if (warmUp === 'Y') {
-      alert('Do-Re-Mi-Fa-So-La-Ti!');
-    } else if (warmUp === 'N') {
-      alert('Some singer you are!');
-    } else {
-      alert('Please input either Y or N');
-    }
+//     if (warmUp === 'Y') {
+//       alert('Do-Re-Mi-Fa-So-La-Ti!');
+//     } else if (warmUp === 'N') {
+//       alert('Some singer you are!');
+//     } else {
+//       alert('Please input either Y or N');
+//     }
   
-  } else if (likesKaraoke === 'N') {
-    alert('Actually, I LOVE karaoke!');
+//   } else if (likesKaraoke === 'N') {
+//     alert('Actually, I LOVE karaoke!');
+//   } else {
+//     alert('Please enter Y or N for your response.');
+//   }
+// }
+
+function guessCatPerson() {
+  var catPerson = prompt('Am I a cat person? (Y or N)').toUpperCase();
+  console.log('Does the user think I am a cat person?: ' + catPerson);
+
+  if(catPerson === 'Y') {
+    alert('You got that right!  They\'re so purrrdy!');
+  } else if(catPerson === 'N') {
+    alert('What\'s the meowtter with you?! Of course I love them kit-tays!');
   } else {
-    alert('Please enter Y or N for your response.');
+    alert('The directions said to answer Y or N...get with the program brah!');
   }
 }
 
-// var catPerson = prompt('Am I a cat person? (Y or N)').toUpperCase();
-// console.log('Does the user think I am a cat person?: ' + catPerson);
+function guessDogPerson() {
+  var dogPerson = prompt('Am I a dog person?(Y or N)').toUpperCase();
+  console.log('Does the user think I am a dog person?: ' + dogPerson);
 
-// if(catPerson === 'Y') {
-//   alert('You got that right!  They\'re so purrrdy!');
-// } else if(catPerson === 'N') {
-//   alert('What\'s the meowtter with you?! Of course I love them kit-tays!');
-// } else {
-//   alert('The directions said to answer Y or N...get with the program brah!');
-// }
-
-// var dogPerson = prompt('Am I a dog person?(Y or N)').toUpperCase();
-// console.log('Does the user think I am a dog person?: ' + dogPerson);
-
-// if (dogPerson === 'Y') {
-//   alert('Hey, a person can be both OKAY!');
-// } else if(dogPerson === 'N') {
-//   alert('Doggos barking by day keeps a smile on my fay!...(translation - I love them boofin woofers!)');
-// } else {
-//   alert('Are you trolling me???  By now I figure you would have realized either input Y or N!...... :)');
-// }
+  if (dogPerson === 'Y') {
+    alert('Hey, a person can be both OKAY!');
+  } else if(dogPerson === 'N') {
+    alert('Doggos barking by day keeps a smile on my fay!...(translation - I love them boofin woofers!)');
+  } else {
+    alert('Are you trolling me???  By now I figure you would have realized either input Y or N!...... :)');
+  }
+}
 
 // var numberInMyHead = 77;
 
@@ -147,4 +151,6 @@ function guessLikesKaraoke() {
 // guessHowManyStates();
 // guessCanIRunFast();
 // guessLikesToDance();
-guessLikesKaraoke();
+// guessLikesKaraoke();
+guessCatPerson();
+guessDogPerson();
