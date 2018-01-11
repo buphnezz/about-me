@@ -95,6 +95,7 @@ function guessDogPerson() {
   }
 }
 
+function theNumberGuessed() {
 var numberInMyHead = 77, counter, numberGuessed;
 numberGuessed = parseInt(prompt('What number am I thinking of?'));
 for (counter = 3; counter >= 0; counter--) {
@@ -103,10 +104,10 @@ for (counter = 3; counter >= 0; counter--) {
     if (counter === 0) {
       alert('Nice try. You are out of guesses.');
     } else if (counter === 1) {
-      alert('You have ' + counter + ' guess left.');
+      alert('Try a higher number.  You have ' + counter + ' guess left.');
       numberGuessed = parseInt(prompt('Guess again'));
     } else {
-      alert('You have ' + counter + ' guesses remaining.');
+      alert('Try a higher number.  You have ' + counter + ' guesses remaining.');
       numberGuessed = parseInt(prompt('Guess again'));
     }
   } else if (numberGuessed > numberInMyHead) {
@@ -114,10 +115,10 @@ for (counter = 3; counter >= 0; counter--) {
     if (counter === 0) {
       alert('Nice try. You are out of guesses.');
     } else if (counter === 1) {
-      alert('You have ' + counter + ' guess left.');
+      alert('Try a lower number.  You have ' + counter + ' guess left.');
       numberGuessed = parseInt(prompt('Guess again'));
     } else {
-      alert('You have ' + counter + ' guesses remaining.');
+      alert('Try a lower number.  You have ' + counter + ' guesses remaining.');
       numberGuessed = parseInt(prompt('Guess again'));
     }
   } else {
@@ -125,6 +126,7 @@ for (counter = 3; counter >= 0; counter--) {
     console.log(counter);
     break;
   }
+}
 }
 
 inputUserName();
@@ -134,3 +136,4 @@ guessLikesToDance();
 guessLikesKaraoke();
 guessCatPerson();
 guessDogPerson();
+theNumberGuessed();
