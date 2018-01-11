@@ -32,40 +32,42 @@ var userName;
 //   }
 // }
 
-function guessLikesToDance() {
-  var likesToDance = prompt('Take a guess, do I like to dance? (Y/N)').toUpperCase();
-  console.log('Does the user think I like to dance?: ' + likesToDance);
+// function guessLikesToDance() {
+//   var likesToDance = prompt('Take a guess, do I like to dance? (Y/N)').toUpperCase();
+//   console.log('Does the user think I like to dance?: ' + likesToDance);
   
-  if (likesToDance === 'Y') {
-    alert('Tricked you! It actually doesn\'t matter either way so let\'s dance right now!!');
-  } else if (likesToDance === 'N') {
-    alert('Tricked you! It actually doesn\'t matter either way so let\'s dance right now!!');
+//   if (likesToDance === 'Y') {
+//     alert('Tricked you! It actually doesn\'t matter either way so let\'s dance right now!!');
+//   } else if (likesToDance === 'N') {
+//     alert('Tricked you! It actually doesn\'t matter either way so let\'s dance right now!!');
+//   } else {
+//     alert('Please enter Y or N.');
+//   }
+// }
+
+function guessLikesKaraoke() {
+  var likesKaraoke = prompt('How about Karaoke?  Do I like Karaoke? (Y/N)').toUpperCase();
+  console.log('Does the user think I like Karaoke?: ' + likesKaraoke);
+  
+  if (likesKaraoke === 'Y') {
+  
+    var warmUp = prompt('You got that right! Can we warm up together then? (Y/N)').toUpperCase();
+    console.log('Did we warm up?: ' + warmUp);
+  
+    if (warmUp === 'Y') {
+      alert('Do-Re-Mi-Fa-So-La-Ti!');
+    } else if (warmUp === 'N') {
+      alert('Some singer you are!');
+    } else {
+      alert('Please input either Y or N');
+    }
+  
+  } else if (likesKaraoke === 'N') {
+    alert('Actually, I LOVE karaoke!');
   } else {
-    alert('Please enter Y or N.');
+    alert('Please enter Y or N for your response.');
   }
 }
-
-// var likesKaraoke = prompt('How about Karaoke?  Do I like Karaoke? (Y/N)').toUpperCase();
-// console.log('Does the user think I like Karaoke?: ' + likesKaraoke);
-
-// if (likesKaraoke === 'Y') {
-
-//   var warmUp = prompt('You got that right! Can we warm up together then? (Y/N)').toUpperCase();
-//   console.log('Did we warm up?: ' + warmUp);
-
-//   if (warmUp === 'Y') {
-//     alert('Do-Re-Mi-Fa-So-La-Ti!');
-//   } else if (warmUp === 'N') {
-//     alert('Some singer you are!');
-//   } else {
-//     alert('Please input either Y or N');
-//   }
-
-// } else if (likesKaraoke === 'N') {
-//   alert('Actually, I LOVE karaoke!');
-// } else {
-//   alert('Please enter Y or N for your response.');
-// }
 
 // var catPerson = prompt('Am I a cat person? (Y or N)').toUpperCase();
 // console.log('Does the user think I am a cat person?: ' + catPerson);
@@ -144,4 +146,5 @@ function guessLikesToDance() {
 // inputUserName();
 // guessHowManyStates();
 // guessCanIRunFast();
-guessLikesToDance();
+// guessLikesToDance();
+guessLikesKaraoke();
