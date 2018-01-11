@@ -2,20 +2,22 @@
 
 var userName;
 
-function inputUserName() {
-  userName = prompt('Hi, what is your name?');
-  console.log('The name of the user is: ' + userName);
-  alert('Great! Nice to meet you ' + userName + '.  I\'m Zachary.  Let\'s go on a fun adventure of getting to know just who I am....and stuff and junk =D!');
-}
-
-// var howManyStates = parseInt(prompt('How many states do you think I\'ve visited since I was born?'));
-// console.log('How many states the user thinks I\'ve visited...tee hee!: ' + howManyStates);
-
-// if(howManyStates === 23) {
-//   alert('What a guess!  You should seriously consider buying a lotto ticket with that kinda luck!');
-// } else {
-//   alert('Not quite, but great try!');
+// function inputUserName() {
+//   userName = prompt('Hi, what is your name?');
+//   console.log('The name of the user is: ' + userName);
+//   alert('Great! Nice to meet you ' + userName + '.  I\'m Zachary.  Let\'s go on a fun adventure of getting to know just who I am....and stuff and junk =D!');
 // }
+
+function guessHowManyStates() {
+  var howManyStates = parseInt(prompt('How many states do you think I\'ve visited since I was born?'));
+  console.log('How many states the user thinks I\'ve visited...tee hee!: ' + howManyStates);
+  
+  if(howManyStates === 23) {
+    alert('What a guess!  You should seriously consider buying a lotto ticket with that kinda luck!');
+  } else {
+    alert('Not quite, but great try!');
+  }
+}
 
 // var canIRunFast = prompt('Can I run faster than a cheetah?  (Please respond with either a YES or NO)').toUpperCase();
 // console.log('Did the user think I could run fast?: ' + canIRunFast);
@@ -135,4 +137,5 @@ function inputUserName() {
 //   }
 // }
 
-inputUserName();
+// inputUserName();
+guessHowManyStates();
