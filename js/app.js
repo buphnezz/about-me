@@ -86,22 +86,46 @@ for (var c = 3; c >= 0; c--) {
 
   if (numberGuessed < numberInMyHead) {
 
-    if (c === 0) {
+    if (numberGuessed < numberInMyHead && c === 0) {
       alert('Aw, nice try. You are out of guesses.  Thanks for playing!');
       console.log(c);
       break;
+      continue;
     }
 
-    alert("higher. " + 'You have ' + c + ' guesses remaining!');
+     if (numberGuessed < numberInMyHead && c === 1) {
+    alert('higher. ' + 'You have ' + c + ' guess remaining!');
     console.log(c);
+    continue;  
+     }
+
+   else {
+    alert('higher. ' + 'You have ' + c + ' guesses remaining!');
+    console.log(c);
+   }
 
   } else if (numberGuessed > numberInMyHead) {
 
-    alert("lower. " + 'You have ' + c + ' guesses remaining!');
-    console.log(c);
+    if (numberGuessed > numberInMyHead && c === 0) {
+      alert('Aw, nice try. You are out of guesses.  Thanks for playing!');
+      console.log(c);
+      break;}
 
+    alert('lower. ' + 'You have ' + c + ' guesses remaining!');
+    console.log(c);
+  }
+
+    if (numberGuessed > numberInMyHead && c === 1) {
+    alert('lower. ' + 'You have ' + c + ' guess remaining!')
+    continue;
+
+  } else if (numberGuessed > numberInMyHead && c === 0) {
+    alert('Aw, nice try. You are out of guesses.  Thanks for playing!');
+    console.log(c);
+    break;
+  
   } else {
-    alert("correct the number was " + numberInMyHead);
+    alert('correct the number was ' + numberInMyHead);
     console.log(c);
     break;
   }
