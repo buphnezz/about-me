@@ -3,11 +3,14 @@ body {
         cursive, serif;
   color: purple;
   background-color: #d8da3d;
+  text-align: center;
+
 }
 
 h1 {
   font-size: 400%;
   text-align: center;
+
 }
 
 h2 {
@@ -19,4 +22,20 @@ h3 {
     color: green;
     font-size: 600%;
     text-align: center;
+    padding: 15px;
 }
+ol {
+  font-size: 30px;
+  text-decoration: underline;
+  
+}
+
+#Goku {
+  color: red;
+  text-decoration-style: wavy; 
+}
+
+#One {
+  text-decoration-style: dashed;
+}
+
